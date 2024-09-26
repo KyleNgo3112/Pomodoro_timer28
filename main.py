@@ -35,14 +35,17 @@ def start_timer():
     long_break_sec = LONG_BREAK_MIN * 60
     # if it's the 8th rep:
     if reps % 8 == 0:
+        messagebox.showinfo(title="Break", message="Take a long break!")
         count_down(long_break_sec)
         timer_label.config(text="Long Break", fg=RED)
     #if it's the 2nd/4th/6th rep:
     elif reps % 2 == 0:
+        messagebox.showinfo(title="Break", message="Take a short break!")
         count_down(short_break_sec)
         timer_label.config(text="Short Break", fg=PINK)
     # if it's the 1st/3th/5th/7th rep:
     else:
+        messagebox.showinfo(title="Work", message="Time to work!")
         count_down(work_sec) 
         timer_label.config(text="Work", fg=GREEN)
 
