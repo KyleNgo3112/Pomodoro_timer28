@@ -5,6 +5,7 @@ function breakdown:
 - WORK_MIN: 25 minutes (work duration)
 - SHORT_BREAK_MIN: 5 minutes (short break duration)
 - LONG_BREAK_MIN: 20 minutes (long break duration)
+At the starts of every period there will be message pop up to remind user
 
 The reset_timer() function allows the user to stop the current timer and reset the session to its default state. It cancels the running timer, resets the displayed timer, and clears any checkmarks indicating completed sessions.
 
